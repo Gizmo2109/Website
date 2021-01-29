@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Weiteres</title>
+    </head>
+    <body>
+        <div class="topbar"></div>
+
+        
+
+        <div class="ende">© 2021 Gizmo GmbH & Co KG  ALLE RECHTE VORBEHALTEN.</div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="http://krazzerserverlul.ddns.net:25565/Website/Homepage.html">Homepage</a>
+            <a href="http://krazzerserverlul.ddns.net:25565/Website/Weiteres.html">Weiteres</a>
+            <a href="http://krazzerserverlul.ddns.net:25565/Website/Info.html">Info</a>
+        </div>
+
+            <img src="https://images.hdqwalls.com/download/astronaut-drowning-manipulation-8l-3840x2400.jpg" alt="surreal-drowning-astronaut-wallpaper" class="hintergrund">
+
+        <span onclick="openNav()" class="menutext">☰ Menu</span>
+
+        <script>
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+
+
+            function openNav() {
+                if (document.getElementById("mySidenav").style.width === "0px") {
+                    document.getElementById("mySidenav").style.width = "250px"
+                } else {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+            }
+        </script>
+    </body>
+</html>
