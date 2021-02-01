@@ -5,7 +5,7 @@ function getRandom(min, max) {
 }
 
 async function fetchAPI() {
-    const urlAPI = 'http://localhost:8010/proxy/' + getRandom(1, 100)
+    const urlAPI = 'http://localhost:8010/proxy/' + getRandom(1, 4000)
     try {
         const response = await fetch(urlAPI)
         const json = await response.json();
@@ -14,7 +14,7 @@ async function fetchAPI() {
         var test1 = 'http:' + test.file_url
         console.log(test1)
         if (test1.charAt(test1.length-1) === 'f') {
-            await fetchAPI()
+            return await fetchAPI()
         } else {return test1}
     } catch(err) {
         console.error(err);

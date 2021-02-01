@@ -165,36 +165,54 @@
     z-index: 2;
 }
 
-.button {
-    position: absolute;
-    top: 50px;
-    left: 0px;
-    z-index: 3;
-}
-
-.test2 {
-    position: absolute;
-    top: 260px;
-    margin:0 auto;
+.img {
+    position: relative;
+    top: 0px;
     z-index: 3;
     width: auto;
     height: 500px;
     max-width: 700px;
+    float: left;
 }
 
 .box7 {
     position: absolute;
     left: 0px;
-    top: 250px;
+    top: 350px;
     width: 100%;
     height: 520px;
     background-color: white;
     z-index: 1;
+    margin: 0px;
 }
 
-.fehler {
-    position: absolute;
-    top: 290px;
-    left: 20px;
+.test7 {
+    position: relative;
+    top: 10px;
+    left: 10px;
     z-index: 2;
+}
+
+.box10 {
+    position: relative;
+    margin-left: 100px;
+    margin-right: 0px;
+    left: 30px;
+    top: 110px;
+    width: 50%;
+    word-wrap: break-word;
+    font-family: "Lucida Handwriting";
+    font-size: 19px;
+}
+
+.überschrift {
+    position: relative;
+    color: white;
+    z-index: 5;
+    top: 160px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    font-weight: bold;
+    margin: auto;
 }
