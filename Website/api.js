@@ -5,7 +5,7 @@ function getRandom(min, max) {
 }
 
 async function fetchAPI() {
-    const urlAPI = 'http://localhost:8010/proxy/' + getRandom(1, 4000)
+    const urlAPI = 'http://localhost:25565/proxy/' + getRandom(1, 4000)
     try {
         const response = await fetch(urlAPI)
         const json = await response.json();
@@ -25,4 +25,3 @@ async function fetchAPI() {
 async function changeIMG(id) {
     document.getElementById(id).src = await fetchAPI()
 }
-
