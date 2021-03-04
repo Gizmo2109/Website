@@ -5,7 +5,7 @@ function getRandom(min, max) {
 }
 
 async function fetchAPI() {
-    const urlAPI = 'http://localhost:25565/proxy/' + getRandom(1, 4000)
+    const urlAPI = 'http://krazzerserverlul.ddns.net:8010/proxy/' + getRandom(1, 4000)
     try {
         const response = await fetch(urlAPI)
         const json = await response.json();
